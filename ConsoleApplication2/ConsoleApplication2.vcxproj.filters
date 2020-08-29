@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{8a4ae959-01ec-41d9-9612-f0d9c2991bd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ObjectInstances">
+      <UniqueIdentifier>{b3ec4600-ac47-4a40-8f7d-a36ea2e15219}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ObjectInstances\Components">
+      <UniqueIdentifier>{f2ae3e23-aefa-43a8-a3ab-def28461816e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ObjectInstances\GameObject">
+      <UniqueIdentifier>{d6fdc358-5aab-4862-8b8f-69e7ff82979e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ObjectInstances\Scene">
+      <UniqueIdentifier>{bfd96f6d-9479-4e14-a0a5-04441e1da5e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Core">
+      <UniqueIdentifier>{447973c8-45dd-46c9-bfc4-0e124572997e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Core\Components">
+      <UniqueIdentifier>{b27fa2cf-18de-43b2-901e-36ee0294f369}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Core\Components\Debug">
+      <UniqueIdentifier>{d409a1e1-cede-4e97-8f1b-0854b11b49a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Core\Components\SceneManager">
+      <UniqueIdentifier>{23692b7c-8cab-4782-bcf2-9a4f7f6d69be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Core\Types">
+      <UniqueIdentifier>{2e605d37-a30d-4dc9-bd03-d9baff7bc2ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ObjectInstances\Components\Transform">
+      <UniqueIdentifier>{dbf3c7b5-cd16-4469-b122-70629c73a184}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ObjectInstances\Components\Rigidbody">
+      <UniqueIdentifier>{888fb7e0-40c5-49e5-88f6-72288624e5d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Assets">
+      <UniqueIdentifier>{ae21b61b-bb95-4de3-8bec-9f74c9f4e107}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Core\Components\SoundManager">
+      <UniqueIdentifier>{ef1518f2-c872-4db4-bf40-1efcc7e2184c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ObjectInstances\Components\Mesh">
+      <UniqueIdentifier>{385b1980-d0fd-49cc-a35b-67b6761b2357}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ObjectInstances\Components\Collision">
+      <UniqueIdentifier>{0a4c530c-cefc-49c2-ba83-11345dae9585}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ObjectInstances\Scene\Levels">
+      <UniqueIdentifier>{d5c24cc7-3e64-47d8-920a-19c84f3a924d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ObjectInstances\GameObject\Bullets">
+      <UniqueIdentifier>{6ac16382-7465-47d6-b05f-7625eeeb4a95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ObjectInstances\GameObject\Player">
+      <UniqueIdentifier>{e17b1f06-2ba6-4fb4-9423-785a59b82cb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ObjectInstances\Scene\Camera">
+      <UniqueIdentifier>{4a7180e4-5163-4a48-9e0e-e471612b394b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ObjectInstances\Scene\Background">
+      <UniqueIdentifier>{22a0c773-91a8-4ed3-a42f-4e8c362190c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ObjectInstances\GameObject\Items">
+      <UniqueIdentifier>{cbdfe4d2-7c7a-4d21-9715-c8f00ea9b37b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ObjectInstances\GameObject\Enemies">
+      <UniqueIdentifier>{65d48791-9451-4f37-9135-d58859607acf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ObjectInstances\Scene\Text">
+      <UniqueIdentifier>{7bad1820-3157-4954-8b81-ad52711efcb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ObjectInstances\Scene\Menus">
+      <UniqueIdentifier>{1c2b4cdb-a5aa-4625-97a7-e75dd33e6de1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GLUTCallbacks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="structures.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Engine\ObjectInstances\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineManager.h">
+      <Filter>Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineSceneManager.h">
+      <Filter>Engine\Core\Components\SceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture2D.h">
+      <Filter>Engine\Core\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="RigidbodyComponent.h">
+      <Filter>Engine\ObjectInstances\Components\Rigidbody</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformComponent.h">
+      <Filter>Engine\ObjectInstances\Components\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshComponent.h">
+      <Filter>Engine\ObjectInstances\Components\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="LightAsset.h">
+      <Filter>Engine\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialAsset.h">
+      <Filter>Engine\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionDetection.h">
+      <Filter>Engine\ObjectInstances\Components\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderAsset.h">
+      <Filter>Engine\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="Friction.h">
+      <Filter>Engine\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="Bounciness.h">
+      <Filter>Engine\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Engine\ObjectInstances\GameObject\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraComponent.h">
+      <Filter>Engine\ObjectInstances\Scene\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Background.h">
+      <Filter>Engine\ObjectInstances\Scene\Background</Filter>
+    </ClInclude>
+    <ClInclude Include="Items.h">
+      <Filter>Engine\ObjectInstances\GameObject\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyBase.h">
+      <Filter>Engine\ObjectInstances\GameObject\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy1.h">
+      <Filter>Engine\ObjectInstances\GameObject\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="Text.h">
+      <Filter>Engine\ObjectInstances\Scene\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy2.h">
+      <Filter>Engine\ObjectInstances\GameObject\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy3.h">
+      <Filter>Engine\ObjectInstances\GameObject\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy4.h">
+      <Filter>Engine\ObjectInstances\GameObject\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy5.h">
+      <Filter>Engine\ObjectInstances\GameObject\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="Boss1.h">
+      <Filter>Engine\ObjectInstances\GameObject\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>Engine\ObjectInstances\GameObject\Bullets</Filter>
+    </ClInclude>
+    <ClInclude Include="Boss2.h">
+      <Filter>Engine\ObjectInstances\GameObject\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="Highscores.h">
+      <Filter>Engine\ObjectInstances\Scene\Menus</Filter>
+    </ClInclude>
+    <ClInclude Include="Instructions1.h">
+      <Filter>Engine\ObjectInstances\Scene\Menus</Filter>
+    </ClInclude>
+    <ClInclude Include="MainMenu.h">
+      <Filter>Engine\ObjectInstances\Scene\Menus</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScene.h">
+      <Filter>Engine\ObjectInstances\Scene\Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Engine\ObjectInstances\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Level1.h">
+      <Filter>Engine\ObjectInstances\Scene\Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Ally.h">
+      <Filter>Engine\ObjectInstances\GameObject\Player</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GLUTCallbacks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>Engine\ObjectInstances\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineManager.cpp">
+      <Filter>Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineSceneManager.cpp">
+      <Filter>Engine\Core\Components\SceneManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture2D.cpp">
+      <Filter>Engine\Core\Types</Filter>
+    </ClCompile>
+    <ClCompile Include="RigidbodyComponent.cpp">
+      <Filter>Engine\ObjectInstances\Components\Rigidbody</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformComponent.cpp">
+      <Filter>Engine\ObjectInstances\Components\Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshComponent.cpp">
+      <Filter>Engine\ObjectInstances\Components\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="LightAsset.cpp">
+      <Filter>Engine\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialAsset.cpp">
+      <Filter>Engine\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionDetection.cpp">
+      <Filter>Engine\ObjectInstances\Components\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderAsset.cpp">
+      <Filter>Engine\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="Bounciness.cpp">
+      <Filter>Engine\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="Friction.cpp">
+      <Filter>Engine\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Engine\ObjectInstances\GameObject\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraComponent.cpp">
+      <Filter>Engine\ObjectInstances\Scene\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Background.cpp">
+      <Filter>Engine\ObjectInstances\Scene\Background</Filter>
+    </ClCompile>
+    <ClCompile Include="Items.cpp">
+      <Filter>Engine\ObjectInstances\GameObject\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy1.cpp">
+      <Filter>Engine\ObjectInstances\GameObject\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyBase.cpp">
+      <Filter>Engine\ObjectInstances\GameObject\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="Text.cpp">
+      <Filter>Engine\ObjectInstances\Scene\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy2.cpp">
+      <Filter>Engine\ObjectInstances\GameObject\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy3.cpp">
+      <Filter>Engine\ObjectInstances\GameObject\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy4.cpp">
+      <Filter>Engine\ObjectInstances\GameObject\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy5.cpp">
+      <Filter>Engine\ObjectInstances\GameObject\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="Boss1.cpp">
+      <Filter>Engine\ObjectInstances\GameObject\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>Engine\ObjectInstances\GameObject\Bullets</Filter>
+    </ClCompile>
+    <ClCompile Include="Boss2.cpp">
+      <Filter>Engine\ObjectInstances\GameObject\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="Highscores.cpp">
+      <Filter>Engine\ObjectInstances\Scene\Menus</Filter>
+    </ClCompile>
+    <ClCompile Include="Instructions1.cpp">
+      <Filter>Engine\ObjectInstances\Scene\Menus</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScene.cpp">
+      <Filter>Engine\ObjectInstances\Scene\Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="MainMenu.cpp">
+      <Filter>Engine\ObjectInstances\Scene\Menus</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Engine\ObjectInstances\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Level1.cpp">
+      <Filter>Engine\ObjectInstances\Scene\Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Ally.cpp">
+      <Filter>Engine\ObjectInstances\GameObject\Player</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\alut.dll" />
+  </ItemGroup>
+</Project>
