@@ -5,18 +5,16 @@
 #include <stdlib.h>
 #include <time.h>
 
-
-
-bool editor = true;
-
 int main(int argc, char* argv[]) 
 {
 	srand(time(NULL));
-	auto* engine = new EngineManager(argc, argv);
+	EngineManager* engine = new EngineManager(argc, argv);
 	
 	engine->Start();
 
 	glutMainLoop();
+
+	delete engine;
 
 	return 0; 
 }
