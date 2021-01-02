@@ -1,5 +1,6 @@
 #pragma once
-#include "structures.h"
+
+typedef unsigned int GLuint;
 
 class Texture2D
 {

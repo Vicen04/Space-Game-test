@@ -5,6 +5,8 @@
 #include "RigidbodyComponent.h"
 #include "Texture2D.h"
 #include "CameraComponent.h"
+#include <glm/trigonometric.hpp>  
+#include <iostream>
 
 Player::Player()
 {

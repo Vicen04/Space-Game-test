@@ -1,6 +1,12 @@
 #pragma once
+#include <glm/vec2.hpp>   
+#include <glm/vec3.hpp> 
+#include <vector>
+#include <memory>
+
 class MaterialAsset;
-#include "structures.h"
+
+typedef unsigned int GLuint;
 
 struct Vertex
 {
@@ -29,19 +35,19 @@ class MeshComponent
 {
 public:
 	MeshComponent(bool HasTexture, glm::vec2 ratio);
-	MeshComponent(vector<Vertex> vertices, vector<GLuint> indices, bool hasTexture, bool HasColor);
+	MeshComponent(std::vector<Vertex> vertices, std::vector<GLuint> indices, bool hasTexture, bool HasColor);
 	~MeshComponent();
 
-	void SetPosition(vector<glm::vec3> position);
-	void SetNormals(vector<glm::vec3> normal);
-	void SetTexCoord(vector<glm::vec2> tex, bool hasTexture);
-	void SetColor(vector<glm::vec3> color, bool hasColor);
-	void SetIndices(vector<GLuint> indices);
-	void SetMaterial(shared_ptr<MaterialAsset> material);
+	void SetPosition(std::vector<glm::vec3> position);
+	void SetNormals(std::vector<glm::vec3> normal);
+	void SetTexCoord(std::vector<glm::vec2> tex, bool hasTexture);
+	void SetColor(std::vector<glm::vec3> color, bool hasColor);
+	void SetIndices(std::vector<GLuint> indices);
+	void SetMaterial(std::shared_ptr<MaterialAsset> material);
 
-	vector<Vertex> GetVertices(){ return _vertex; }
-	vector<GLuint> GetIndices(){ return _indices; }
-	shared_ptr<MaterialAsset> GetMaterial() { return _material; }
+	std::vector<Vertex> GetVertices(){ return _vertex; }
+	std::vector<GLuint> GetIndices(){ return _indices; }
+	std::shared_ptr<MaterialAsset> GetMaterial() { return _material; }
 	float GetRadius() { return _radius; }
 	GLuint GetVertexArrayID() { return _vertexArrayID; };
 	GLuint GetVertexBuffer() { return _vertexBuffer; };
@@ -51,9 +57,9 @@ public:
 	bool HasColor() { return _hasColor; }
 
 private:
-	vector<Vertex> _vertex;
-	vector<GLuint> _indices;
-	shared_ptr<MaterialAsset> _material;
+	std::vector<Vertex> _vertex;
+	std::vector<GLuint> _indices;
+	std::shared_ptr<MaterialAsset> _material;
 	bool _hasTexture = false;
 	bool _hasColor = false;
 	float _radius;

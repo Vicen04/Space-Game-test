@@ -1,10 +1,14 @@
 #pragma once
-#include "structures.h"
+
+#include <memory>
+
 
 class MeshComponent;
 class TransformComponent;
 class Texture2D;
 class CameraComponent;
+
+typedef unsigned int GLuint;
 
 class Background
 {

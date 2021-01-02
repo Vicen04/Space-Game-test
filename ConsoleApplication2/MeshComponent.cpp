@@ -1,5 +1,6 @@
 #include "MeshComponent.h"
 #include "MaterialAsset.h"
+#include <GL/glew.h>
 
 //creates a basic square / rectangle based on the ratio
 MeshComponent::MeshComponent(bool texture, glm::vec2 ratio)
@@ -54,7 +55,7 @@ MeshComponent::MeshComponent(bool texture, glm::vec2 ratio)
 }
 
 
-MeshComponent::MeshComponent(vector<Vertex> vertices, vector<GLuint> indices, bool hasTexture, bool hasColor)
+MeshComponent::MeshComponent(std::vector<Vertex> vertices, std::vector<GLuint> indices, bool hasTexture, bool hasColor)
 {
 	_vertex = vertices;
 	_indices = indices;
@@ -71,7 +72,7 @@ MeshComponent::~MeshComponent()
 	_indices.clear();
 }
 
-void MeshComponent::SetPosition(vector<glm::vec3> position)
+void MeshComponent::SetPosition(std::vector<glm::vec3> position)
 {
 	if (position.size() == _vertex.size())
 	{
@@ -79,7 +80,7 @@ void MeshComponent::SetPosition(vector<glm::vec3> position)
 		_vertex.at(i)._position = position.at(i);
 	}
 }
-void MeshComponent::SetNormals(vector<glm::vec3> normal)
+void MeshComponent::SetNormals(std::vector<glm::vec3> normal)
 { 
 	if (normal.size() == _vertex.size())
 	{
@@ -87,7 +88,7 @@ void MeshComponent::SetNormals(vector<glm::vec3> normal)
 			_vertex.at(i)._normal = normal.at(i);
 	}
 }
-void MeshComponent::SetTexCoord(vector<glm::vec2> tex, bool hasTexture)
+void MeshComponent::SetTexCoord(std::vector<glm::vec2> tex, bool hasTexture)
 {
 	if (tex.size() == _vertex.size())
 	{
@@ -96,7 +97,7 @@ void MeshComponent::SetTexCoord(vector<glm::vec2> tex, bool hasTexture)
 	}
 	_hasTexture = hasTexture;
 }
-void MeshComponent::SetColor(vector<glm::vec3> color, bool hasColor)
+void MeshComponent::SetColor(std::vector<glm::vec3> color, bool hasColor)
 { 
 	if (color.size() == _vertex.size())
 	{
@@ -105,7 +106,7 @@ void MeshComponent::SetColor(vector<glm::vec3> color, bool hasColor)
 	}
 	_hasColor = hasColor;
 }
-void MeshComponent::SetIndices(vector<GLuint> indices)
+void MeshComponent::SetIndices(std::vector<GLuint> indices)
 {
 	if (indices.size() == _indices.size())
 	{
@@ -114,7 +115,7 @@ void MeshComponent::SetIndices(vector<GLuint> indices)
 	}
 }
 
-void MeshComponent::SetMaterial(shared_ptr<MaterialAsset> material)
+void MeshComponent::SetMaterial(std::shared_ptr<MaterialAsset> material)
 {
 	_material = material;
 }

@@ -4,6 +4,11 @@
 #include "Texture2D.h"
 #include "MaterialAsset.h"
 #include "CameraComponent.h"
+#include <GL/glew.h>
+#include <glm/trigonometric.hpp>
+#include <glm/gtc/type_ptr.hpp>
+
+using namespace std;
 
 Background::Background(std::shared_ptr<CameraComponent> camera)
 {

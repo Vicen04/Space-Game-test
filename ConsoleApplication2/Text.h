@@ -1,6 +1,13 @@
 #pragma once
-#include "structures.h"
+#include <glm/vec2.hpp>  
 #include <map>
+#include <glm/mat4x4.hpp>  
+#include <glm/vec3.hpp>
+#include <string>
+#include <glm/ext/matrix_clip_space.hpp>
+
+typedef unsigned int GLuint;
+typedef char GLchar;
 
 struct Character {
 	unsigned int TextureID; // ID handle of the glyph texture

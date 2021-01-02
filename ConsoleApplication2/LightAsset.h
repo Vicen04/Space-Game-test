@@ -1,5 +1,5 @@
 #pragma once
-#include "structures.h"
+#include <glm/vec3.hpp> 
 
 class LightAsset
 {

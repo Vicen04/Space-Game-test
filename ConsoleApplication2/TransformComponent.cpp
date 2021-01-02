@@ -1,5 +1,6 @@
 #include "TransformComponent.h"
 #include "RigidbodyComponent.h"
+#include <glm/ext/matrix_transform.hpp>
 
 TransformComponent::TransformComponent()
 {

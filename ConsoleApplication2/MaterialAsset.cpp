@@ -1,4 +1,5 @@
 #include "MaterialAsset.h"
+#include <GL/glew.h>
 
 MaterialAsset::MaterialAsset(bool texture)
 {

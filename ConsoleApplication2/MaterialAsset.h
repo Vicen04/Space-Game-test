@@ -1,5 +1,7 @@
 #pragma once
-#include "structures.h"
+#include <glm/vec3.hpp> 
+
+typedef float GLfloat;
 
 class MaterialAsset
 {

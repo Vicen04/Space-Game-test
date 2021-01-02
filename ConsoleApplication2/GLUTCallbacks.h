@@ -1,4 +1,8 @@
 #pragma once
+#define GLEW_STATIC 1
+#define FREEGLUT_LIB_PRAGMAS 0
+
+#define REFRESHRATE 16
 
 class EngineManager;
 

@@ -1,6 +1,8 @@
 #pragma once
 #include "EnemyBase.h"
 
+//This is the first boss
+
 class Boss1: public EnemyBase
 {
 public:

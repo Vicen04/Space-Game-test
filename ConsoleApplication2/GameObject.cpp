@@ -5,6 +5,8 @@
 #include "TransformComponent.h"
 #include "RigidbodyComponent.h"
 #include "MaterialAsset.h"
+#include <GL/glew.h>
+#include <glm/gtc/type_ptr.hpp>
 
 GameObject::GameObject()
 {	

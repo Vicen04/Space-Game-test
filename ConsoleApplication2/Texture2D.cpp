@@ -1,6 +1,11 @@
 #include "Texture2D.h"
+#include <GL/glew.h>
+#include <iostream>
+#include <fstream>
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
+
+using namespace std;
 
 
 Texture2D::Texture2D()

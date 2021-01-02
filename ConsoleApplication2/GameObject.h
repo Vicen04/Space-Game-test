@@ -1,13 +1,29 @@
 #pragma once
 
-#include "structures.h"
+#include <memory>
+#include <string>
 #include <map>
+#include <glm/vec3.hpp> 
+
+struct Circle2D
+{
+	float radius;
+
+	Circle2D(float initialRad)
+	{
+
+		radius = initialRad;
+	}
+};
+
+using namespace std;
 
 class MeshComponent;
 class RigidbodyComponent;
 class TransformComponent;
 class Texture2D;
 class CameraComponent;
+typedef unsigned int GLuint;
 
 class GameObject
 {

@@ -1,6 +1,8 @@
 #include "EngineManager.h"
 #include "GLUTCallbacks.h"
-#include "structures.h"
+#include <Windows.h>
+#include <GL/glew.h>
+#include <GL/freeglut.h> //freeglut library 
 #include "GameScene.h"
 
 
@@ -33,7 +35,7 @@ void EngineManager::InitWindow(int argc, char* argv[])
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA);
 	glutInitWindowSize(1024, 720);
 	glutInitWindowPosition(300, 200);
-	glutCreateWindow("Solo game");
+	glutCreateWindow("Demonstration");
 	glutDisplayFunc(GLUTCallbacks::Display);
 	glutTimerFunc(REFRESHRATE, GLUTCallbacks::Timer, REFRESHRATE);
 	glutKeyboardFunc(GLUTCallbacks::KeyboardKeyPressed);

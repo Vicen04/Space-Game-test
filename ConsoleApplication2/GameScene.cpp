@@ -14,6 +14,8 @@
 #include "Items.h"
 #include "EnemyBase.h"
 #include "Ally.h"
+#include <GL/glew.h>
+#include <glm/gtc/type_ptr.hpp>
 
 SceneBase::SceneBase(shared_ptr<Text> text, shared_ptr<CameraComponent> camera, shared_ptr<Player> player): Scene()
 {

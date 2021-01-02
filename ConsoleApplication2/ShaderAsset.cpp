@@ -1,5 +1,6 @@
 #include "ShaderAsset.h"
 #include "Texture2D.h"
+#include <GL/glew.h>
 
 GLuint VertexArrayID;
 //Set material
@@ -306,7 +307,7 @@ Shader::~Shader()
 	ShaderProgram.clear();
 }
 
-void Shader::AddShader(char* vertexShaderpath, char* fragmentShaderpath, string shaderName)
+void Shader::AddShader(char* vertexShaderpath, char* fragmentShaderpath, std::string shaderName)
 {
 	ShaderProgram.emplace(shaderName, glCreateProgram());
 	//code to read shader file
@@ -318,7 +319,7 @@ void Shader::AddShader(char* vertexShaderpath, char* fragmentShaderpath, string 
 	delete[] pFragmentShaderCode;
 }
 
-void Shader::SetShader(string shaderName)
+void Shader::SetShader(std::string shaderName)
 {
 	//vertex shader
 	GLuint VertexShader = glCreateShader(GL_VERTEX_SHADER);

@@ -1,5 +1,5 @@
 #pragma once
-#include "structures.h"
+#include <glm/vec2.hpp> 
 
 class GameObject;
 

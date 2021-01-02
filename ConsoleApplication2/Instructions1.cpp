@@ -8,6 +8,10 @@
 #include "Background.h"
 #include "MeshComponent.h"
 #include "TransformComponent.h"
+#include <GL/glew.h>
+#include <glm/gtc/type_ptr.hpp>
+
+using namespace std;
 
 Instructions1::Instructions1(shared_ptr<Text> text, shared_ptr<CameraComponent> camera) : Scene()
 {

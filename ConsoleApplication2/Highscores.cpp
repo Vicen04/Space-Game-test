@@ -7,6 +7,10 @@
 #include "Text.h"
 #include "Background.h"
 #include "MeshComponent.h"
+#include <GL/glew.h>
+#include <glm/gtc/type_ptr.hpp>
+
+using namespace std;
 
 Highscores::Highscores(shared_ptr<Text> text, shared_ptr<CameraComponent> camera) : Scene()
 {

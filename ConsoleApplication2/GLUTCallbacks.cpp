@@ -1,8 +1,13 @@
+
+
 #include "GLUTCallbacks.h"
 #include "EngineManager.h"
 #include "Player.h"
 #include "GameScene.h"
 #include "MainMenu.h"
+#include <GL/glew.h>
+#include <GL/freeglut.h>
+
 
 namespace GLUTCallbacks 
 {

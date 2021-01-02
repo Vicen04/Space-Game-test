@@ -1,7 +1,9 @@
 #include "Text.h"
+#include <GL/glew.h>
+#include <iostream>
 #include <ft2build.h>
-#include FT_FREETYPE_H  
-
+#include <glm/gtc/type_ptr.hpp>
+#include FT_FREETYPE_H 
 
 Text::Text()
 {
